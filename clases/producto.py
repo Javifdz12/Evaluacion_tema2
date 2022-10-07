@@ -5,4 +5,6 @@ class producto:
         self.tipo = tipo
         self.precio = precio
     def __str__(self):
-        return f'Producto:\n-Nombre:{self.nombre}\n-Codigo:{self.codigo}\n-Tipo:'
+        return f'Producto:\n-Nombre:{self.nombre}\n-Codigo:{self.codigo}\n-Tipo:{self.tipo}\n-Precio:{self.precio}'
+    def modificar_precio(self,x):
+        self.precio=x
