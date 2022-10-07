@@ -2,6 +2,14 @@ from clases.alumno import alumno
 from clases.producto import producto
 from coche import Coche
 from vehiculo import Vehiculo
+def catalogar2(list,y):
+    for i in list:
+        if i.ruedas==y:
+            print(i.catalogar1())
+        else:
+            list.remove(i)
+    print(f'Hay {len(list)} coches con {y} ruedas')
+
 def lanzar():
     alumno1=alumno('javi',6)
     print(alumno1.calificacion())
@@ -17,5 +25,6 @@ def lanzar():
     list1=[c1,c2]
     for i in list1:
         print(i.catalogar1())
-    for i in list1:
-        print(i.catalogar2(4))
+    print(catalogar2(list1,4))
+
+
