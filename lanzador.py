@@ -2,6 +2,7 @@ from clases.alumno import alumno
 from clases.producto import producto
 from coche import Coche
 from vehiculo import Vehiculo
+from evaluar import funcion1,funcion2,funcion3,funcion4
 def catalogar2(list,y):
     for i in list:
         if i.ruedas==y:
@@ -26,5 +27,9 @@ def lanzar():
     for i in list1:
         print(i.catalogar1())
     print(catalogar2(list1,4))
+    funcion1()
+    funcion2()
+    funcion3()
+    funcion4()
 
 
