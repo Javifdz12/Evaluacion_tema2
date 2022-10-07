@@ -17,3 +17,5 @@ def lanzar():
     list1=[c1,c2]
     for i in list1:
         print(i.catalogar1())
+    for i in list1:
+        print(i.catalogar2(4))
