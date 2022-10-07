@@ -17,7 +17,4 @@ class Coche(Vehiculo):
     def catalogar1(self):
         return f'Soy un coche con estos atributos: {self.__str__()}'
 
-    def catalogar2(self,y):
-        if self.ruedas==y:
-            return f'Soy un coche con estos atributos: {self.__str__()}'
 
